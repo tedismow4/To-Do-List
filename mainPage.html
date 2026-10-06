@@ -15,8 +15,16 @@
 
     <div class="add">
       <input type="text" id="newTask" placeholder="What needs doing?" aria-label="New task" autocomplete="off">
+      <input type="date" id="newDate" aria-label="Due date">
       <button id="addBtn">Add task</button>
     </div>
+
+    <ul class="legend" aria-label="Color key">
+      <li><i class="dot overdue"></i>Overdue</li>
+      <li><i class="dot urgent"></i>1-2 days</li>
+      <li><i class="dot soon"></i>3-7 days</li>
+      <li><i class="dot later"></i>8+ days</li>
+    </ul>
 
     <ul id="list"></ul>
     <button class="clear" id="clearBtn">Clear completed</button>
