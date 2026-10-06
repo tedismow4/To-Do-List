@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="mainPage.css">
-  </head>
-  
-  <body>
-    <h1 class="logo-name">To-Do List</h1>
-    <div>
-      <p1>I need to:</p1>
-      <input placeholder="my laundry">
-      <p1>On this date:</p1>
-      <input class="date-input" placeholder="YY/MM/DD">
-      <button>Add</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-do list</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mainPage.css">
+</head>
+<body>
+  <main class="card">
+    <h1>To-do list</h1>
+    <p class="count" id="count"></p>
+
+    <div class="add">
+      <input type="text" id="newTask" placeholder="What needs doing?" aria-label="New task" autocomplete="off">
+      <button id="addBtn">Add task</button>
     </div>
-    <script src="mainPage.js"></script>
-  </body>
+
+    <ul id="list"></ul>
+    <button class="clear" id="clearBtn">Clear completed</button>
+  </main>
+
+  <script src="mainPage.js"></script>
+</body>
 </html>

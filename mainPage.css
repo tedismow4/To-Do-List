@@ -1,3 +1,85 @@
-.date-input{
-  width: 100px;
-}
+* { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 48px 16px;
+      font-family: "Bricolage Grotesque", system-ui, sans-serif;
+      color: #1f2a44;
+      /* the background */
+      background: linear-gradient(160deg, #2b3a67 0%, #6b5b95 45%, #f2a07b 100%);
+      background-attachment: fixed;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 480px;
+      background: #fffaf4;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 20px 50px rgba(20, 20, 50, 0.35);
+    }
+
+    h1 { margin: 0 0 4px; font-size: 2rem; font-weight: 800; }
+    .count { margin: 0 0 20px; color: #6a7189; font-size: 0.95rem; }
+
+    .add { display: flex; gap: 8px; margin-bottom: 20px; }
+    .add input {
+      flex: 1;
+      padding: 12px 14px;
+      font: inherit;
+      border: 2px solid #d9d2e6;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .add input:focus { outline: none; border-color: #6b5b95; }
+    .add button {
+      padding: 0 20px;
+      font: inherit;
+      font-weight: 600;
+      color: #fff;
+      background: #2b3a67;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .add button:hover { background: #3c4f8a; }
+    button:focus-visible, input:focus-visible { outline: 3px solid #f2a07b; outline-offset: 2px; }
+
+    ul { list-style: none; margin: 0; padding: 0; }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 4px;
+      border-bottom: 1px solid #ece4f2;
+    }
+    li input[type="checkbox"] { width: 20px; height: 20px; accent-color: #6b5b95; cursor: pointer; }
+    li span { flex: 1; word-break: break-word; }
+    li.done span { text-decoration: line-through; color: #9a9fb3; }
+    li .delete {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      line-height: 1;
+      color: #b0556b;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+    li .delete:hover { background: #f8e3e8; }
+
+    .empty { color: #6a7189; padding: 12px 4px; }
+
+    .clear {
+      margin-top: 16px;
+      background: none;
+      border: none;
+      font: inherit;
+      color: #6a7189;
+      text-decoration: underline;
+      cursor: pointer;
+    }
